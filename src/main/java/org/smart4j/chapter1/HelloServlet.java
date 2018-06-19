@@ -19,6 +19,10 @@ public class HelloServlet extends HttpServlet
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         System.out.println("hello");
+
+
+
+
         req.getRequestDispatcher("/WEB-INF/jsp/hello.jsp").forward(req,resp);
     }
 }
